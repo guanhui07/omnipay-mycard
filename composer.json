@@ -1,5 +1,5 @@
 {
-  "name": "xxtime/omnipay-mycard",
+  "name": "yzh52521/omnipay-mycard",
   "type": "library",
   "description": "MyCard gateway for Omnipay payment processing library",
   "keywords": [
@@ -11,16 +11,16 @@
     "mycard",
     "purchase"
   ],
-  "homepage": "https://github.com/xxtime/omnipay-mycard",
+  "homepage": "https://github.com/yzh52521/omnipay-mycard",
   "license": "MIT",
   "authors": [
     {
-      "name": "Joe",
-      "email": "joe@xxtime.com"
+      "name": "yzh52521",
+      "email": "396751927@qq.com"
     },
     {
       "name": "Omnipay Contributors",
-      "homepage": "https://github.com/xxtime/omnipay-mycard/contributors"
+      "homepage": "https://github.com/yzh52521/omnipay-mycard/contributors"
     }
   ],
   "autoload": {
@@ -29,10 +29,6 @@
     }
   },
   "require": {
-    "omnipay/common": "~2.0"
-  },
-  "require-dev": {
-    "illuminate/support": "~v5.4",
-    "omnipay/tests": "~2.0"
+    "omnipay/common": "^3.0"
   }
 }

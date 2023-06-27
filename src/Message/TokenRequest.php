@@ -3,6 +3,8 @@
 namespace Omnipay\MyCard\Message;
 
 
+use Omnipay\MyCard\Exception\DefaultException;
+
 class TokenRequest extends AbstractRequest
 {
 
@@ -25,9 +27,8 @@ class TokenRequest extends AbstractRequest
             'Hash'         => $this->getSign('token'),
         ];
         $requestData = array_filter($requestData);
-        $httpRequest = $this->httpClient->post($endpoint, null, $requestData);
-        $httpResponse = $httpRequest->send();
-        $body = json_decode($httpResponse->getBody(), true);
+        $httpResponse=   $this->httpClient->request('POST', $endpoint, [], http_build_query($requestData));
+        $body = json_decode($httpResponse->getBody()->getContents(), true);
         if ($body['ReturnCode'] != 1) {
             throw new DefaultException($body['ReturnMsg']);
         }
