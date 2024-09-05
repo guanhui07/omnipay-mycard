@@ -88,7 +88,7 @@ class CompareTransaction
 
     public function send()
     {
-        exit($this->data);
+        return ($this->data);
     }
 
 
