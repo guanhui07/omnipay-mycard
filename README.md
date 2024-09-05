@@ -19,11 +19,7 @@ Omnipay is installed via [Composer](http://getcomposer.org/). To install, simply
 to your `composer.json` file:
 
 ```json
-{
-    "require": {
-        "guanhui07/omnipay-mycard": "~1.1"
-    }
-}
+composer require guanhui07/omnipay-mycard
 ```
 
 And run composer to update your dependencies:
